@@ -6,18 +6,20 @@ import PaginaPadrao from "components/PaginaPadrao";
 import Inicio from "page/Inicio";
 import Post from "page/Post";
 import NaoEncontrada from "page/NaoEncontrada";
+import ScrollToTop from "components/ScrollToTop";
 
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<AboutMe />} />
-          <Route path="posts/:id" element={<Post />} />
         </Route>
+        <Route path="posts/:id" element={<Post />} />
 
         <Route path="*" element={<NaoEncontrada />} />
       </Routes>
