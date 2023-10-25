@@ -7,6 +7,7 @@ function Menu() {
             <nav className='navegacao'>
                 <MenuLink to="/">Início</MenuLink>
                 <MenuLink to="/sobremim">Sobre Mim</MenuLink>
+                <MenuLink to="/agendamento">Agendamento</MenuLink>
             </nav>
         </header>
     )

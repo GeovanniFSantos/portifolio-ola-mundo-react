@@ -7,6 +7,7 @@ import Inicio from "page/Inicio";
 import Post from "page/Post";
 import NaoEncontrada from "page/NaoEncontrada";
 import ScrollToTop from "components/ScrollToTop";
+import Agendamento from "page/Agendamento";
 
 
 function AppRoutes() {
@@ -18,6 +19,7 @@ function AppRoutes() {
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<AboutMe />} />
+          <Route path="agendamento" element={<Agendamento />} />
         </Route>
         <Route path="posts/:id" element={<Post />} />
 
